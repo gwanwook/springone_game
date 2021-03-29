@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="523.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz03.Controller">
+   <children>
+      <Label layoutX="47.0" layoutY="31.0" prefHeight="38.0" prefWidth="376.0" text="문제1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="69.0" prefHeight="38.0" prefWidth="376.0" text="주인 아주머니께서 문을 강제로 열고자 쿵쿵거리는 상황,">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button layoutX="96.0" layoutY="446.0" mnemonicParsing="false" onAction="#saveBtn" prefHeight="54.0" prefWidth="290.0" text="확인" />
+      <Label layoutX="47.0" layoutY="107.0" prefHeight="38.0" prefWidth="376.0" text="아래 선택지들 중 한가지 행동을 해야한다.">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdoA" layoutX="29.0" layoutY="165.0" mnemonicParsing="false" selected="true" text="문 앞에 가구들을 옮기면서 소리를 지른다.">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="ex01" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdoB" layoutX="29.0" layoutY="209.0" mnemonicParsing="false" text="주방에서 칼을 꺼내들고 소리를 지른다." toggleGroup="$ex01">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdoC" layoutX="29.0" layoutY="252.0" mnemonicParsing="false" text="문 앞에 가구들을 옮겨놓고 112로 전화하여 도움을 요청한다." toggleGroup="$ex01">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdoD" layoutY="302.0" mnemonicParsing="false" text="태연하게 문이 고장났다고 이야기하며 대화를 시도하고 준비해 둔 여성긴급신고어플로 112에 신호를 전송한다." toggleGroup="$ex01">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

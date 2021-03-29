@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="523.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz02.Controller">
+   <children>
+      <Label layoutX="47.0" layoutY="31.0" prefHeight="38.0" prefWidth="376.0" text="문제1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1.0" layoutY="69.0" prefHeight="54.0" prefWidth="469.0" text="주인 아주머니께서 &quot;늦은 시간 미안하다. 가스배관수리를 해야한다. 우리건물을 가스를 사용하지">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button layoutX="96.0" layoutY="446.0" mnemonicParsing="false" onAction="#saveBtn" prefHeight="54.0" prefWidth="290.0" text="확인" />
+      <Label layoutX="1.0" layoutY="126.0" prefHeight="38.0" prefWidth="469.0" text="않는 새볔시간에 수리한다.&quot;고 말하는 상황, 아래 선택지들 중 한가지 행동을 해야만 한다">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdoA" layoutX="14.0" layoutY="203.0" mnemonicParsing="false" selected="true" text="주인 아주머니시므로 문을 열어드린다.">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="ex01" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdoB" layoutX="14.0" layoutY="247.0" mnemonicParsing="false" text="시간이 늦어 불편하니 돌아가달라고 말씀드린다." toggleGroup="$ex01">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdoC" layoutX="14.0" layoutY="294.0" mnemonicParsing="false" text="의심스러우므로 주인아주머니 번호로 전화해본다. 전화를 받으시기에 안심하고 문을 열어드린다." toggleGroup="$ex01">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdoD" layoutX="14.0" layoutY="338.0" mnemonicParsing="false" text="무시하고 잔다.." toggleGroup="$ex01">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
