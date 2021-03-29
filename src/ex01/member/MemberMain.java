@@ -1,4 +1,4 @@
-package listview;
+package ex01.member;
 
 import java.io.IOException;
 
@@ -7,11 +7,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class ListviewMain {
-
-	public void gameStart() {
+public class MemberMain {
+	public void setMemberStage() {
 		Stage stage = new Stage();
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("listview.fxml"));
+		
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("member.fxml"));
 		Parent root = null;
 		try {
 			root = loader.load();
@@ -19,6 +19,9 @@ public class ListviewMain {
 			e.printStackTrace();
 		}
 		Scene scene = new Scene(root);
+		
+		MemberController controller = loader.getController();
+		controller.setRoot(root);
 		
 		stage.setScene(scene);
 		stage.show();
