@@ -1,11 +1,10 @@
-package ex01.springoneGameDto;
+package ex01.memberDTO;
 
 public class MemberDTO {
 	private String id;
 	private String pw;
-	private String nickname;
+	private String nickName;
 	private int count;
-	
 	public String getId() {
 		return id;
 	}
@@ -18,11 +17,11 @@ public class MemberDTO {
 	public void setPw(String pw) {
 		this.pw = pw;
 	}
-	public String getNickname() {
-		return nickname;
+	public String getNickName() {
+		return nickName;
 	}
-	public void setNickname(String nickname) {
-		this.nickname = nickname;
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
 	}
 	public int getCount() {
 		return count;
@@ -30,4 +29,7 @@ public class MemberDTO {
 	public void setCount(int count) {
 		this.count = count;
 	}
+	
+	
+	
 }
