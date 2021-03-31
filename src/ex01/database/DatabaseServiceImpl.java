@@ -4,9 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-
+import java.util.ArrayList;
 import ex01.memberDTO.MemberDTO;
-import javafx.scene.control.TextField;
 
 public class DatabaseServiceImpl implements DataBaseService {
 
@@ -115,5 +114,34 @@ public class DatabaseServiceImpl implements DataBaseService {
 		}
 		return result;
 	}
-
+	public ArrayList<String> getNick() {
+		String sql = "select nickname from member";
+		ArrayList<String> arrNick = new ArrayList<String>();
+		try {
+			Connection con = DriverManager.getConnection(url, id, pwd);
+			PreparedStatement ps = con.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()) {
+				arrNick.add(rs.getString("nickname"));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return arrNick;
+	}
+	public ArrayList<Number> getCnt() {
+		String sql = "select count from member";
+		ArrayList<Number> arrCnt = new ArrayList<Number>();
+		try {
+			Connection con = DriverManager.getConnection(url, id, pwd);
+			PreparedStatement ps = con.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()) {
+				arrCnt.add(rs.getInt("count"));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return arrCnt;
+	}
 }

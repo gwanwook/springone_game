@@ -15,7 +15,8 @@ public class MediaServiceImpl implements MediaServer{
 
 	@Override
 	public void myBtn0() {
-		
+//		quiz01.QuizMain quiz01 = new quiz01.QuizMain();
+//		quiz01.quiz01();
 	}
 	@Override
 	public void myBtn1() {
@@ -24,7 +25,7 @@ public class MediaServiceImpl implements MediaServer{
 	}
 	@Override
 	public void myBtn2() {
-		
+		mediaPlayer.stop();
 	}
 	
 	@Override

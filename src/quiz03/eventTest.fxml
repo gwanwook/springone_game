@@ -7,46 +7,62 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="523.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz03.Controller">
+<AnchorPane prefHeight="529.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz03.Controller">
    <children>
-      <Label layoutX="47.0" layoutY="31.0" prefHeight="38.0" prefWidth="376.0" text="문제1">
+      <Label layoutX="54.0" layoutY="39.0" prefHeight="38.0" prefWidth="73.0" text="Quiz.3">
          <font>
-            <Font size="20.0" />
+            <Font name="Arial" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="47.0" layoutY="69.0" prefHeight="38.0" prefWidth="376.0" text="주인 아주머니께서 문을 강제로 열고자 쿵쿵거리는 상황,">
+      <Label layoutX="52.0" layoutY="86.0" prefHeight="22.0" prefWidth="364.0" text="주인 아주머니께서 ">
          <font>
-            <Font size="11.0" />
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="52.0" layoutY="115.0" prefHeight="22.0" prefWidth="364.0" text="문을 강제로 열고자 쿵쿵거리는 상황,">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="96.0" layoutY="446.0" mnemonicParsing="false" onAction="#saveBtn" prefHeight="54.0" prefWidth="290.0" text="확인" />
-      <Label layoutX="47.0" layoutY="107.0" prefHeight="38.0" prefWidth="376.0" text="아래 선택지들 중 한가지 행동을 해야한다.">
+      <Label layoutX="52.0" layoutY="145.0" prefHeight="22.0" prefWidth="364.0" text="아래 선택지를 중 한가지 행동을 해야만 한다.">
          <font>
-            <Font size="11.0" />
-         </font>
-      </Label>
-      <RadioButton fx:id="rdoA" layoutX="29.0" layoutY="165.0" mnemonicParsing="false" selected="true" text="문 앞에 가구들을 옮기면서 소리를 지른다.">
-         <font>
-            <Font size="11.0" />
-         </font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <RadioButton fx:id="rdoA" layoutX="63.0" layoutY="222.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="334.0" selected="true" text="A. 문 앞에 가구들을 옮기면서 소리를 지른다..">
          <toggleGroup>
             <ToggleGroup fx:id="ex01" />
          </toggleGroup>
-      </RadioButton>
-      <RadioButton fx:id="rdoB" layoutX="29.0" layoutY="209.0" mnemonicParsing="false" text="주방에서 칼을 꺼내들고 소리를 지른다." toggleGroup="$ex01">
          <font>
-            <Font size="11.0" />
+            <Font name="Arial" size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rdoC" layoutX="29.0" layoutY="252.0" mnemonicParsing="false" text="문 앞에 가구들을 옮겨놓고 112로 전화하여 도움을 요청한다." toggleGroup="$ex01">
+      <RadioButton fx:id="rdoB" layoutX="63.0" layoutY="258.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="334.0" text="B. 주방에서 칼을 꺼내들고 소리를 지른다." toggleGroup="$ex01">
          <font>
-            <Font size="11.0" />
+            <Font name="Arial" size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rdoD" layoutY="302.0" mnemonicParsing="false" text="태연하게 문이 고장났다고 이야기하며 대화를 시도하고 준비해 둔 여성긴급신고어플로 112에 신호를 전송한다." toggleGroup="$ex01">
+      <RadioButton fx:id="rdoC" layoutX="62.0" layoutY="295.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="334.0" text="C. 문 앞에 가구들을 옮겨놓고 112로 전화하여" toggleGroup="$ex01">
          <font>
-            <Font size="11.0" />
+            <Font name="Arial" size="13.0" />
          </font>
       </RadioButton>
+      <RadioButton fx:id="rdoD" layoutX="62.0" layoutY="341.0" mnemonicParsing="false" text="D. 태연하게 문이 고장났다고 이야기하며 대화를 시도하고" toggleGroup="$ex01">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="100.0" layoutY="443.0" mnemonicParsing="false" onAction="#saveBtn" prefHeight="54.0" prefWidth="290.0" text="확인">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="100.0" layoutY="315.0" text="도움을 요청한다.">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="361.0" text="준비해 둔 여성긴급신고어플로 112에 신호를 전송한다.">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -21,7 +21,7 @@ public class MediaServiceImpl implements MediaServer{
 	}
 	@Override
 	public void myBtn2() {
-		
+		mediaPlayer.stop();
 	}
 
 	@Override

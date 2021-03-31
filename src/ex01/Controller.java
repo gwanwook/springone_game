@@ -40,8 +40,8 @@ public class Controller implements Initializable{
 	
 	public void loginProc() {
 		ls.loginCheck(root);
-		ListviewMain lvm = new ListviewMain();
-		lvm.gameStart();
+//		ListviewMain lvm = new ListviewMain();
+//		lvm.gameStart();
 	}
 	
 	public void cancelProc() {
