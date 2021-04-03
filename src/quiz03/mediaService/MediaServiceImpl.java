@@ -1,5 +1,8 @@
 package quiz03.mediaService;
 
+import ex01.database.DataBaseService;
+import ex01.database.DatabaseServiceImpl;
+import ex01.loginService.LoginServiceImpl;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.media.Media;
@@ -13,11 +16,12 @@ public class MediaServiceImpl implements MediaServer{
 	
 	@Override
 	public void myBtn0() {
-		
+		LoginServiceImpl.dto.updateCount(1);
 	}
 	@Override
 	public void myBtn1() {
-		
+		DataBaseService db = new DatabaseServiceImpl();
+		db.setCnt(LoginServiceImpl.dto.getId(), LoginServiceImpl.dto.getCount());
 	}
 	@Override
 	public void myBtn2() {
@@ -37,7 +41,7 @@ public class MediaServiceImpl implements MediaServer{
 			btn2.setDisable(false);
 		});
 		mediaPlayer.setOnEndOfMedia( () -> {
-			if(mediaName.equals("../../game_resources/media/horror03_4.mp4")) {
+			if(mediaName.equals("../../game_resources/media/horror03_4.mp4")||mediaName.equals("../../game_resources/media/2horror03_4.mp4")||mediaName.equals("../../game_resources/media/3horror03_3.mp4")) {
 				btn0.setDisable(true);
 				btn1.setDisable(false);
 				btn2.setDisable(false);

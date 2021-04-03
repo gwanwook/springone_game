@@ -14,16 +14,7 @@
             <Font name="Arial" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="52.0" layoutY="86.0" prefHeight="22.0" prefWidth="364.0" text="주인 아주머니께서 ">
-         <font>
-            <Font name="Arial Bold" size="18.0" />
-         </font></Label>
-      <Label layoutX="52.0" layoutY="115.0" prefHeight="22.0" prefWidth="364.0" text="문을 강제로 열고자 쿵쿵거리는 상황,">
-         <font>
-            <Font name="Arial Bold" size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="52.0" layoutY="145.0" prefHeight="22.0" prefWidth="364.0" text="아래 선택지를 중 한가지 행동을 해야만 한다.">
+      <Label fx:id="lblQuiz3" layoutX="52.0" layoutY="86.0" prefHeight="107.0" prefWidth="383.0" text="주인 아주머니께서 문을 강제로 열고자 쿵쿵거리는 상황, 아래 선택지들 중 한가지 행동을 해야한다." wrapText="true">
          <font>
             <Font name="Arial Bold" size="18.0" />
          </font></Label>
@@ -35,17 +26,17 @@
             <Font name="Arial" size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rdoB" layoutX="63.0" layoutY="258.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="334.0" text="B. 주방에서 칼을 꺼내들고 소리를 지른다." toggleGroup="$ex01">
+      <RadioButton fx:id="rdoB" layoutX="63.0" layoutY="247.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="406.0" text="B. 주방에서 칼을 꺼내들고 소리를 지른다." toggleGroup="$ex01" wrapText="true">
          <font>
             <Font name="Arial" size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rdoC" layoutX="62.0" layoutY="295.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="334.0" text="C. 문 앞에 가구들을 옮겨놓고 112로 전화하여" toggleGroup="$ex01">
+      <RadioButton fx:id="rdoC" layoutX="62.0" layoutY="295.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="398.0" text="C. 문 앞에 가구들을 옮겨놓고 112로 전화하여" toggleGroup="$ex01" wrapText="true">
          <font>
             <Font name="Arial" size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rdoD" layoutX="62.0" layoutY="341.0" mnemonicParsing="false" text="D. 태연하게 문이 고장났다고 이야기하며 대화를 시도하고" toggleGroup="$ex01">
+      <RadioButton fx:id="rdoD" alignment="TOP_LEFT" layoutX="62.0" layoutY="344.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="358.0" text="D. 태연하게 문이 고장났다고 이야기하며 대화를 시도하고 준비해 둔 여성긴급신고어플로 112에 신호를 전송한다. " toggleGroup="$ex01" wrapText="true">
          <font>
             <Font name="Arial" size="13.0" />
          </font>
@@ -54,15 +45,5 @@
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font></Button>
-      <Label layoutX="100.0" layoutY="315.0" text="도움을 요청한다.">
-         <font>
-            <Font name="Arial" size="13.0" />
-         </font>
-      </Label>
-      <Label layoutX="100.0" layoutY="361.0" text="준비해 둔 여성긴급신고어플로 112에 신호를 전송한다.">
-         <font>
-            <Font name="Arial" size="13.0" />
-         </font>
-      </Label>
    </children>
 </AnchorPane>

@@ -1,5 +1,6 @@
 package quiz02.mediaService;
 
+import ex01.loginService.LoginServiceImpl;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.media.Media;
@@ -15,7 +16,7 @@ public class MediaServiceImpl implements MediaServer{
 
 	@Override
 	public void myBtn0() {
-		
+		LoginServiceImpl.dto.updateCount(1);
 	}
 	@Override
 	public void myBtn1() {
@@ -40,7 +41,7 @@ public class MediaServiceImpl implements MediaServer{
 			btn2.setDisable(false);
 		});
 		mediaPlayer.setOnEndOfMedia( () -> {
-			if(mediaName.equals("../../game_resources/media/horror02_2.mp4")) {
+			if(mediaName.equals("../../game_resources/media/horror02_2.mp4")||mediaName.equals("../../game_resources/media/2horror02_2.mp4")||mediaName.equals("../../game_resources/media/3horror02_4.mp4")) {
 				btn0.setDisable(true);
 				btn1.setDisable(false);
 				btn2.setDisable(false);

@@ -14,16 +14,7 @@
             <Font name="Arial" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="52.0" layoutY="86.0" prefHeight="20.0" prefWidth="306.0" text="여성이 반지층에 홀로 자취하는 상황, ">
-         <font>
-            <Font name="Arial Bold" size="18.0" />
-         </font></Label>
-      <Label layoutX="52.0" layoutY="115.0" prefHeight="20.0" prefWidth="259.0" text="새볔에 누군가 문을 두드린다. ">
-         <font>
-            <Font name="Arial Bold" size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="52.0" layoutY="145.0" prefHeight="22.0" prefWidth="364.0" text="아래 선택지를 중 한가지 행동을 해야만 한다.">
+      <Label fx:id="lblQuiz1" layoutX="52.0" layoutY="86.0" prefHeight="101.0" prefWidth="362.0" text="여성이 반지층에 홀로 자취하는 상황, 새볔에 누군가 문을 두드린다. 아래 선택지를 중 한가지 행동을 해야만 한다." wrapText="true">
          <font>
             <Font name="Arial Bold" size="18.0" />
          </font></Label>
@@ -45,7 +36,7 @@
             <Font name="Arial" size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rdoD" layoutX="62.0" layoutY="331.0" mnemonicParsing="false" text="D. 무시하고 잔다.." toggleGroup="$ex01">
+      <RadioButton fx:id="rdoD" layoutX="62.0" layoutY="331.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="327.0" text="D. 무시하고 잔다.." toggleGroup="$ex01">
          <font>
             <Font name="Arial" size="13.0" />
          </font>

@@ -3,6 +3,7 @@ package listview;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import ex01.common.CommonClass;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -25,20 +26,34 @@ public class ListviewController implements Initializable{
 		});
 	}
 	public void setListview() {
-		fxImageview.setImage(new Image("game_resources/image/horror01.png"));
+//		fxImageview.setImage(new Image("game_resources/image/horror01.png"));
 		gameString = FXCollections.observableArrayList();
 		gameString.add("공포게임 1");
 		gameString.add("공포게임 2");
+		gameString.add("공포게임 3");
 		fxListview.setItems(gameString);
 	}
 	public void nextView() {
 		if(fxListview.getSelectionModel().isSelected(0)) {
 			System.out.println("공포게임 1 시작");
+			CommonClass.setListNo("1");
+			
 			QuizMain quizMain = new QuizMain();
 			quizMain.quiz01();
 		}
 		if(fxListview.getSelectionModel().isSelected(1)) {
 			System.out.println("공포게임 2 시작");
+			CommonClass.setListNo("2");
+			
+			QuizMain quizMain = new QuizMain();
+			quizMain.quiz01();
+		}
+		if(fxListview.getSelectionModel().isSelected(2)) {
+			System.out.println("공포게임 3 시작");
+			CommonClass.setListNo("3");
+			
+			QuizMain quizMain = new QuizMain();
+			quizMain.quiz01();
 		}
 	}
 }

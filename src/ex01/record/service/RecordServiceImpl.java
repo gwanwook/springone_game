@@ -33,94 +33,72 @@ public class RecordServiceImpl implements RecordService{
 
 		int su = 0;
 
+		int rank1 = 100;
+		int rank2 = 100;
+		int rank3 = 100;
+		int rank4 = 100;
+		int rank5 = 100;
+
 		for(int i=0; i<arrCnt.size(); i++) {
-			for(int i2=1; i2<arrCnt.size(); i2++) {
-				if((int)arrCnt.get(i)<=(int)arrCnt.get(i2)) {
-					lbCnt0.setText(arrCnt.get(i).toString());
-					lbNick0.setText(arrNick.get(i));					
-				}else {
-					lbCnt0.setText(arrCnt.get(i2).toString());
-					lbNick0.setText(arrNick.get(i2));
-					su = i2;
-				}
-			}
-			if(lbCnt0.getText().equals(arrCnt.get(i).toString())) {
-				arrCnt.remove(i);
-				arrNick.remove(i);
+			if(rank1<=(int)arrCnt.get(i)) {
+
 			}else {
-				arrCnt.remove(su);
-				arrNick.remove(su);
+				rank1 = (int)arrCnt.get(i);
+				su = i;
 			}
-			for(int i2=1; i2<arrCnt.size(); i2++) {
-				if((int)arrCnt.get(i)<=(int)arrCnt.get(i2)) {
-					lbCnt1.setText(arrCnt.get(i).toString());
-					lbNick1.setText(arrNick.get(i));
-				}else {
-					lbCnt1.setText(arrCnt.get(i2).toString());
-					lbNick1.setText(arrNick.get(i2));
-					su = i2;
-				}
-			}
-			if(lbCnt1.getText().equals(arrCnt.get(i).toString())) {
-				arrCnt.remove(i);
-				arrNick.remove(i);
-			}else {
-				arrCnt.remove(su);
-				arrNick.remove(su);
-			}
-			for(int i2=1; i2<arrCnt.size(); i2++) {
-				if((int)arrCnt.get(i)<=(int)arrCnt.get(i2)) {
-					lbCnt2.setText(arrCnt.get(i).toString());
-					lbNick2.setText(arrNick.get(i));
-				}else {
-					lbCnt2.setText(arrCnt.get(i2).toString());
-					lbNick2.setText(arrNick.get(i2));
-					su = i2;
-				}
-			}
-			if(lbCnt2.getText().equals(arrCnt.get(i).toString())) {
-				arrCnt.remove(i);
-				arrNick.remove(i);
-			}else {
-				arrCnt.remove(su);
-				arrNick.remove(su);
-			}
-			for(int i2=1; i2<arrCnt.size(); i2++) {
-				if((int)arrCnt.get(i)<=(int)arrCnt.get(i2)) {
-					lbCnt3.setText(arrCnt.get(i).toString());
-					lbNick3.setText(arrNick.get(i));
-				}else {
-					lbCnt3.setText(arrCnt.get(i2).toString());
-					lbNick3.setText(arrNick.get(i2));
-					su = i2;
-				}
-			}
-			if(lbCnt3.getText().equals(arrCnt.get(i).toString())) {
-				arrCnt.remove(i);
-				arrNick.remove(i);
-			}else {
-				arrCnt.remove(su);
-				arrNick.remove(su);
-			}
-			for(int i2=1; i2<arrCnt.size(); i2++) {
-				if((int)arrCnt.get(i)<=(int)arrCnt.get(i2)) {
-					lbCnt4.setText(arrCnt.get(i).toString());
-					lbNick4.setText(arrNick.get(i));
-				}else {
-					lbCnt4.setText(arrCnt.get(i2).toString());
-					lbNick4.setText(arrNick.get(i2));
-					su = i2;
-				}
-			}
-			if(lbCnt4.getText().equals(arrCnt.get(i).toString())) {
-				arrCnt.remove(i);
-				arrNick.remove(i);
-			}else {
-				arrCnt.remove(su);
-				arrNick.remove(su);
-			}
-			
 		}
+		lbCnt0.setText(arrCnt.get(su).toString());
+		lbNick0.setText(arrNick.get(su).toString());
+		arrCnt.remove(su);
+		arrNick.remove(su);
+		for(int i=0; i<arrCnt.size(); i++) {
+			if(rank2<=(int)arrCnt.get(i)) {
+
+			}else {
+				rank2 = (int)arrCnt.get(i);
+				su = i;
+			}
+		}
+		lbCnt1.setText(arrCnt.get(su).toString());
+		lbNick1.setText(arrNick.get(su).toString());
+		arrCnt.remove(su);
+		arrNick.remove(su);
+		for(int i=0; i<arrCnt.size(); i++) {
+			if(rank3<=(int)arrCnt.get(i)) {
+
+			}else {
+				rank3 = (int)arrCnt.get(i);
+				su = i;
+			}
+		}
+		lbCnt2.setText(arrCnt.get(su).toString());
+		lbNick2.setText(arrNick.get(su).toString());
+		arrCnt.remove(su);
+		arrNick.remove(su);
+		for(int i=0; i<arrCnt.size(); i++) {
+			if(rank4<=(int)arrCnt.get(i)) {
+
+			}else {
+				rank4 = (int)arrCnt.get(i);
+				su = i;
+			}
+		}
+		lbCnt3.setText(arrCnt.get(su).toString());
+		lbNick3.setText(arrNick.get(su).toString());
+		arrCnt.remove(su);
+		arrNick.remove(su);
+		for(int i=0; i<arrCnt.size(); i++) {
+			if(rank5<=(int)arrCnt.get(i)) {
+
+			}else {
+				rank5 = (int)arrCnt.get(i);
+				su = i;
+			}
+		}
+		lbCnt4.setText(arrCnt.get(su).toString());
+		lbNick4.setText(arrNick.get(su).toString());
+		arrCnt.remove(su);
+		arrNick.remove(su);
 	}
 
 }

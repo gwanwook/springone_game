@@ -51,7 +51,6 @@ public class SucceedController implements Initializable{
 		String nickName = "nickName";
 		nickName = CommonClass.getNickName();
 		lblSucceed.setText(nickName+"님 탈출에 성공했습니다!");
-
 	}
 
 }

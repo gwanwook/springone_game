@@ -29,7 +29,9 @@ public class MemberDTO {
 	public void setCount(int count) {
 		this.count = count;
 	}
-	
+	public void updateCount(int count) {
+		this.count += count;
+	}
 	
 	
 }

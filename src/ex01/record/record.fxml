@@ -29,11 +29,6 @@
       <Label fx:id="lbCnt2" layoutX="376.0" layoutY="208.0" prefHeight="22.0" prefWidth="93.0" text="기록 없음" />
       <Label fx:id="lbCnt3" layoutX="376.0" layoutY="242.0" prefHeight="22.0" prefWidth="93.0" text="기록 없음" />
       <Label fx:id="lbCnt4" layoutX="376.0" layoutY="276.0" prefHeight="22.0" prefWidth="93.0" text="기록 없음" />
-      <Button layoutX="270.0" layoutY="514.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="93.0" text="확인" />
-      <Label layoutX="172.0" layoutY="23.0" prefHeight="34.0" prefWidth="117.0" text="공포게임 1">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
+      <Button layoutX="270.0" layoutY="514.0" mnemonicParsing="false" onAction="#cancelProc" prefHeight="44.0" prefWidth="93.0" text="확인" />
    </children>
 </AnchorPane>

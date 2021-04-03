@@ -13,4 +13,10 @@ public interface DataBaseService {
 	public int deleteMember(String id);
 	public ArrayList<String> getNick();
 	public ArrayList<Number> getCnt();
+	
+	public String getChoiceContent(String listNo, String quizNo, String choiceNo);
+	public String getQuestionContent(String listNo, String stageNo);
+	
+	public String getChoiceMediaPath(String listNo, String stageNo, String choiceNo);
+	public void setCnt(String userId, int count);
 }

@@ -6,6 +6,7 @@ import ex01.Controller;
 import ex01.common.CommonClass;
 import ex01.database.DataBaseService;
 import ex01.database.DatabaseServiceImpl;
+import ex01.memberDTO.MemberDTO;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -14,7 +15,7 @@ import javafx.scene.control.TextField;
 import listview.ListviewMain;
 
 public class LoginServiceImpl implements LoginService {
-
+	public static MemberDTO dto = new MemberDTO();
 	@Override
 	public void loginCheck(Parent root) {
 		TextField id = (TextField)root.lookup("#fxId");
@@ -34,6 +35,8 @@ public class LoginServiceImpl implements LoginService {
 				alert.setContentText(dbNickName + "님 게임을 시작합니다");
 				Optional<ButtonType> result = alert.showAndWait();
 				if(result.get() == ButtonType.OK) {
+					dto.setId(id.getText());
+					dto.setCount(0);
 					ListviewMain lvm = new ListviewMain();
 					lvm.gameStart();
 				}
@@ -42,4 +45,5 @@ public class LoginServiceImpl implements LoginService {
 			}
 		}
 	}
+
 }
