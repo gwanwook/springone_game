@@ -218,5 +218,4 @@ public class DatabaseServiceImpl implements DataBaseService {
 			e.printStackTrace();
 		}
 	}
-	
 }
