@@ -26,7 +26,7 @@ public class ListviewController implements Initializable{
 		});
 	}
 	public void setListview() {
-//		fxImageview.setImage(new Image("game_resources/image/horror01.png"));
+		fxImageview.setImage(new Image("game_resources/image/horror01.png"));
 		gameString = FXCollections.observableArrayList();
 		gameString.add("공포게임 1");
 		gameString.add("공포게임 2");

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="497.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz01.Controller">
+   <children>
+      <Label layoutX="54.0" layoutY="39.0" prefHeight="38.0" prefWidth="73.0" text="Quiz.1">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblQuiz1" layoutX="52.0" layoutY="86.0" prefHeight="101.0" prefWidth="362.0" text="여성이 반지층에 홀로 자취하는 상황, 새볔에 누군가 문을 두드린다. 아래 선택지를 중 한가지 행동을 해야만 한다." wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <RadioButton fx:id="rdoA" alignment="TOP_LEFT" layoutX="63.0" layoutY="222.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="334.0" selected="true" text="A. 주인 아주머니일 것이므로 문을 열어준다." wrapText="true">
+         <toggleGroup>
+            <ToggleGroup fx:id="ex01" />
+         </toggleGroup>
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdoB" alignment="TOP_LEFT" layoutX="63.0" layoutY="258.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="334.0" text="B. 누군지 모르지만 문을 두드리므로 문을 열어준다." toggleGroup="$ex01" wrapText="true">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdoC" layoutX="62.0" layoutY="295.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="333.0" text="C. 방범렌즈로 얼굴을 확인한다." toggleGroup="$ex01">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdoD" layoutX="62.0" layoutY="331.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="327.0" text="D. 무시하고 잔다.." toggleGroup="$ex01">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="89.0" layoutY="410.0" mnemonicParsing="false" onAction="#saveBtn" prefHeight="54.0" prefWidth="290.0" text="확인">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
