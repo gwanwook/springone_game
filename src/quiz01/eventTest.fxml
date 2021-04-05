@@ -18,7 +18,7 @@
          <font>
             <Font name="Arial Bold" size="18.0" />
          </font></Label>
-      <RadioButton fx:id="rdoA" layoutX="63.0" layoutY="222.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="334.0" selected="true" text="A. 주인 아주머니일 것이므로 문을 열어준다.">
+      <RadioButton fx:id="rdoA" alignment="TOP_LEFT" layoutX="63.0" layoutY="222.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="334.0" selected="true" text="A. 주인 아주머니일 것이므로 문을 열어준다." wrapText="true">
          <toggleGroup>
             <ToggleGroup fx:id="ex01" />
          </toggleGroup>
@@ -26,7 +26,7 @@
             <Font name="Arial" size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rdoB" layoutX="63.0" layoutY="258.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="334.0" text="B. 누군지 모르지만 문을 두드리므로 문을 열어준다." toggleGroup="$ex01">
+      <RadioButton fx:id="rdoB" alignment="TOP_LEFT" layoutX="63.0" layoutY="258.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="334.0" text="B. 누군지 모르지만 문을 두드리므로 문을 열어준다." toggleGroup="$ex01" wrapText="true">
          <font>
             <Font name="Arial" size="13.0" />
          </font>
