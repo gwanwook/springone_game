@@ -41,7 +41,7 @@ public class MediaServiceImpl implements MediaServer{
 			btn2.setDisable(false);
 		});
 		mediaPlayer.setOnEndOfMedia( () -> {
-			if(mediaName.equals("../../game_resources/media/horror02_2.mp4")||mediaName.equals("../../game_resources/media/2horror02_2.mp4")||mediaName.equals("../../game_resources/media/3horror02_4.mp4")) {
+			if(mediaName.equals("../../game_resources/media/horror02_2.mp4")||mediaName.equals("../../game_resources/media/2horror02_2.mp4")||mediaName.equals("../../game_resources/media/3horror02_4.mp4")||mediaName.equals("../../game_resources/media/4horror02_1.mp4")) {
 				btn0.setDisable(true);
 				btn1.setDisable(false);
 				btn2.setDisable(false);

@@ -31,12 +31,12 @@
             <Font name="Arial" size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rdoC" layoutX="62.0" layoutY="295.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="333.0" text="C. 방범렌즈로 얼굴을 확인한다." toggleGroup="$ex01">
+      <RadioButton fx:id="rdoC" alignment="TOP_LEFT" layoutX="62.0" layoutY="295.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="333.0" text="C. 방범렌즈로 얼굴을 확인한다." toggleGroup="$ex01" wrapText="true">
          <font>
             <Font name="Arial" size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rdoD" layoutX="62.0" layoutY="331.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="327.0" text="D. 무시하고 잔다.." toggleGroup="$ex01">
+      <RadioButton fx:id="rdoD" alignment="TOP_LEFT" layoutX="62.0" layoutY="331.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="327.0" text="D. 무시하고 잔다.." toggleGroup="$ex01" wrapText="true">
          <font>
             <Font name="Arial" size="13.0" />
          </font>
