@@ -7,67 +7,44 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="547.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz02.Controller">
+<AnchorPane prefHeight="619.0" prefWidth="581.0" style="-fx-background-image: url(game_resources/image/back_04.jpg); -fx-background-position: center;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz02.Controller">
    <children>
-      <Label layoutX="48.0" layoutY="39.0" prefHeight="38.0" prefWidth="73.0" text="Quiz.2">
+      <Button layoutX="28.0" layoutY="27.0" mnemonicParsing="false" prefHeight="483.0" prefWidth="525.0" style="-fx-background-color: rgba(0,0,0,0.3); -fx-background-radius: 8px;" />
+      <Label layoutX="38.0" layoutY="27.0" prefHeight="38.0" prefWidth="73.0" text="Quiz.2" textFill="#c61010">
          <font>
-            <Font name="Arial" size="20.0" />
+            <Font name="Arial Bold" size="23.0" />
          </font>
       </Label>
-      <Label layoutX="44.0" layoutY="84.0" prefHeight="22.0" prefWidth="446.0" text=" 주인 아주머니께서 ">
+      <Label fx:id="lblQuiz2" layoutX="44.0" layoutY="52.0" prefHeight="195.0" prefWidth="478.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5),0,1,2,2);" text="주인 아주머니께서 &quot;늦은 시간 미안하다. 가스배관수리를 해야한다. 우리건물을 가스를 사용하지 않는 새볔시간에 수리한다.&quot;고 말하는 상황, 아래 선택지들 중 한가지 행동을 해야만 한다." textFill="WHITE" wrapText="true">
          <font>
             <Font name="Arial" size="18.0" />
          </font></Label>
-      <Label layoutX="44.0" layoutY="111.0" prefHeight="22.0" prefWidth="402.0" text=" &quot; 늦은 시간 미안하다. 가스배관수리를 해야한다.  ">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="44.0" layoutY="134.0" prefHeight="22.0" prefWidth="402.0" text="  우리건물은 가스를 사용하지않는 새볔시간에  ">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font></Label>
-      <Label layoutX="44.0" layoutY="158.0" prefHeight="22.0" prefWidth="402.0" text="  수리한다. &quot;  고 말하는 상황, ">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="44.0" layoutY="188.0" prefHeight="22.0" prefWidth="402.0" text=" 아래 선택지를 중 한가지 행동을 해야만 한다.">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </Label>
-      <RadioButton fx:id="rdoA" layoutX="63.0" layoutY="262.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="334.0" selected="true" text="A. 주인 아주머니시므로 문을 열어드린다.">
+      <RadioButton fx:id="rdoA" alignment="TOP_LEFT" layoutX="37.0" layoutY="268.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="478.0" selected="true" text="A. 주인 아주머니시므로 문을 열어드린다." textFill="WHITE" wrapText="true">
          <toggleGroup>
             <ToggleGroup fx:id="ex01" />
          </toggleGroup>
          <font>
-            <Font name="Arial" size="13.0" />
+            <Font name="Arial Italic" size="14.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rdoB" layoutX="63.0" layoutY="298.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="334.0" text="B. 시간이 늦어 불편하니 돌아가달라고 말씀드린다." toggleGroup="$ex01">
+      <RadioButton fx:id="rdoB" alignment="TOP_LEFT" layoutX="37.0" layoutY="323.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="478.0" text="B. 시간이 늦어 불편하니 돌아가달라고 말씀드린다." textFill="WHITE" toggleGroup="$ex01" wrapText="true">
          <font>
-            <Font name="Arial" size="13.0" />
+            <Font name="Arial Italic" size="14.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rdoC" layoutX="63.0" layoutY="335.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="333.0" text="C. 의심스러우므로 주인아주머니 번호로 전화해본다." toggleGroup="$ex01">
+      <RadioButton fx:id="rdoC" alignment="TOP_LEFT" layoutX="37.0" layoutY="378.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="478.0" text="C. 의심스러우므로 주인아주머니 번호로 전화해본다." textFill="WHITE" toggleGroup="$ex01" wrapText="true">
          <font>
-            <Font name="Arial" size="13.0" />
+            <Font name="Arial Italic" size="14.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rdoD" layoutX="63.0" layoutY="391.0" mnemonicParsing="false" text="D. 무시하고 잔다.." toggleGroup="$ex01">
+      <RadioButton fx:id="rdoD" alignment="TOP_LEFT" layoutX="37.0" layoutY="433.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="478.0" text="D. 무시하고 잔다." textFill="WHITE" toggleGroup="$ex01" wrapText="true">
          <font>
-            <Font name="Arial" size="13.0" />
+            <Font name="Arial Italic" size="14.0" />
          </font>
       </RadioButton>
-      <Button layoutX="114.0" layoutY="444.0" mnemonicParsing="false" onAction="#saveBtn" prefHeight="54.0" prefWidth="290.0" text="확인">
+      <Button layoutX="138.0" layoutY="535.0" mnemonicParsing="false" onAction="#saveBtn" prefHeight="54.0" prefWidth="290.0" style="-fx-background-color: rgba(204,204,204,0.2);" text="확인" textFill="#a83737">
          <font>
-            <Font name="Arial Bold" size="14.0" />
+            <Font name="태 나무" size="31.0" />
          </font></Button>
-      <Label layoutX="91.0" layoutY="355.0" text="전화를 받으시기에 안심하고 문을 열어드린다.">
-         <font>
-            <Font name="Arial" size="13.0" />
-         </font>
-      </Label>
    </children>
 </AnchorPane>

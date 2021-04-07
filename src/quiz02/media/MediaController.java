@@ -3,6 +3,9 @@ package quiz02.media;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import ex01.common.CommonClass;
+import ex01.database.DataBaseService;
+import ex01.database.DatabaseServiceImpl;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.RadioButton;
@@ -15,21 +18,23 @@ public class MediaController implements Initializable{
 	Parent root;
 	MediaServer ms;
 	QuizMain qm;
+	DataBaseService ds;
 
 	public void setRoot(Parent root,RadioButton rdoA, RadioButton rdoB, RadioButton rdoC, RadioButton rdoD) {
 		this.root = root;
+		ds = new DatabaseServiceImpl();
 		if(rdoA.isSelected()) {
-			ms.setMedia(root, "../../game_resources/media/horror01_1.mp4");
+			ms.setMedia(root, ds.getChoiceMediaPath(CommonClass.getListNo(), "2", "1"));
 		}
 		if(rdoB.isSelected()) {
-			ms.setMedia(root, "../../game_resources/media/horror02_2.mp4");
+			ms.setMedia(root, ds.getChoiceMediaPath(CommonClass.getListNo(), "2", "2"));
 		}
 		if(rdoC.isSelected()) {
-			ms.setMedia(root, "../../game_resources/media/horror01_1.mp4");
+			ms.setMedia(root, ds.getChoiceMediaPath(CommonClass.getListNo(), "2", "3"));
 		}
 		if(rdoD.isSelected()) {
-			ms.setMedia(root, "../../game_resources/media/horror01_4.mp4");
-		}		
+			ms.setMedia(root, ds.getChoiceMediaPath(CommonClass.getListNo(), "2", "4"));
+		}	
 	}
 
 	@Override

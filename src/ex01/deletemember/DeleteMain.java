@@ -20,6 +20,8 @@ public class DeleteMain {
 		}
 		Scene scene = new Scene(root);
 		
+		stage.setTitle("È¸¿øÅ»Åð");
+		
 		DeleteController controller = loader.getController();
 		controller.setRoot(root);
 		

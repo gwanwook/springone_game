@@ -19,5 +19,26 @@ public class CommonClass implements CommonService{
 		alert.setContentText(message);
 		alert.show();
 	}
+	
+	public static String nickName;
+	public static String listNo;
+	
+	
+	public static String getListNo() {
+		return listNo;
+	}
+
+	public static void setListNo(String listNo) {
+		CommonClass.listNo = listNo;
+	}
+
+
+	public static String getNickName() {
+		return nickName;
+	}
+
+	public static void setNickName(String nickName) {
+		CommonClass.nickName = nickName;
+	}
 
 }

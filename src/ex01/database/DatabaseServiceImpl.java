@@ -5,6 +5,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+
+import ex01.loginService.LoginService;
+import ex01.loginService.LoginServiceImpl;
 import ex01.memberDTO.MemberDTO;
 
 public class DatabaseServiceImpl implements DataBaseService {
@@ -144,4 +147,76 @@ public class DatabaseServiceImpl implements DataBaseService {
 		}
 		return arrCnt;
 	}
+	
+	@Override
+	public String getQuestionContent(String listNo, String stageNo) {
+		String sql = "select CONTENT from QUESTION where listNo='"+listNo+"' and stageNo='"+stageNo+"'";
+				
+		String questionContent = null;
+		ResultSet rs = null;
+		
+		try {
+			Connection con = DriverManager.getConnection(url, this.id, pwd);
+			PreparedStatement ps = con.prepareStatement(sql);
+			rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				questionContent = rs.getString("content");
+				}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return questionContent;
+	}
+	
+	@Override
+	public String getChoiceContent(String listNo, String stageNo, String choiceNo) {
+		String sql = "select content from choice where listNo='"+listNo+"' and stageNo='"+stageNo+"'and choiceNo='"+choiceNo+"'";
+		String choiceContent = null;
+		ResultSet rs = null;
+		try {
+			Connection con = DriverManager.getConnection(url, this.id, pwd);
+			PreparedStatement ps = con.prepareStatement(sql);
+			rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				choiceContent = rs.getString("content");
+				}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return choiceContent;
+	}
+	
+	@Override
+	public String getChoiceMediaPath(String listNo, String stageNo, String choiceNo) {
+		String sql = "select mediaPath from choice where listNo='"+listNo+"' and stageNo='"+stageNo+"'and choiceNo='"+choiceNo+"'";
+		String mediaPath = null;
+		ResultSet rs = null;
+		try {
+			Connection con = DriverManager.getConnection(url, this.id, pwd);
+			PreparedStatement ps = con.prepareStatement(sql);
+			rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				mediaPath = rs.getString("mediaPath");
+				}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return mediaPath;
+	}
+	public void setCnt(String userId, int count) {
+		String sql = "update member set count = "+count+" where id = '"+userId+"'";
+		try {
+			Connection con = DriverManager.getConnection(url, id, pwd);
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 }

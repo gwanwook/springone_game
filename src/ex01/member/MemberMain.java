@@ -20,6 +20,8 @@ public class MemberMain {
 		}
 		Scene scene = new Scene(root);
 		
+		stage.setTitle("회원가입");
+		
 		MemberController controller = loader.getController();
 		controller.setRoot(root);
 		

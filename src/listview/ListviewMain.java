@@ -2,6 +2,7 @@ package listview;
 
 import java.io.IOException;
 
+import ex01.common.CommonClass;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -19,6 +20,8 @@ public class ListviewMain {
 			e.printStackTrace();
 		}
 		Scene scene = new Scene(root);
+		
+		stage.setTitle("게임목록");
 		
 		stage.setScene(scene);
 		stage.show();

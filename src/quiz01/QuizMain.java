@@ -2,6 +2,7 @@ package quiz01;
 
 import java.io.IOException;
 
+import ex01.common.CommonClass;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -24,7 +25,7 @@ public class QuizMain {
 		controller.setRoot(root);
 		
 		stage.setScene(scene);
-		stage.setTitle("Game.1");
+		stage.setTitle("horrorGame."+CommonClass.getListNo());
 		stage.show();
 	}
 }

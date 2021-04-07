@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class MainClass extends Application {
 
@@ -15,6 +16,9 @@ public class MainClass extends Application {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("eventTest.fxml"));
 		Parent root = loader.load();
 		Scene scene = new Scene(root);
+		
+		primaryStage.setTitle("공포게임");
+		
 		
 		Controller controller = loader.getController();
 		controller.setRoot(root);

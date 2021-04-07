@@ -5,22 +5,22 @@
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="419.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz03.media.MediaController">
+<AnchorPane prefHeight="419.0" prefWidth="470.0" style="-fx-background-image: url(game_resources/image/back_05.jpg); -fx-background-position: center;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz03.media.MediaController">
    <children>
-      <MediaView fx:id="fxMediaView" fitHeight="250.0" fitWidth="400.0" layoutX="35.0" layoutY="40.0" />
-      <Button fx:id="btn0" layoutX="35.0" layoutY="346.0" mnemonicParsing="false" onAction="#myBtn0" prefHeight="42.0" prefWidth="118.0" text="다시하기">
+      <MediaView fx:id="fxMediaView" fitHeight="300.0" fitWidth="450.0" layoutX="10.0" layoutY="28.0" />
+      <Button fx:id="btn0" alignment="CENTER" layoutX="28.0" layoutY="334.0" mnemonicParsing="false" onAction="#myBtn0" prefHeight="54.0" prefWidth="132.0" style="-fx-background-color: rgba(204,204,204,0.8);" text="다시하기" textFill="#a83737">
          <font>
-            <Font name="Arial Black" size="15.0" />
+            <Font name="Arial Bold" size="23.0" />
          </font>
       </Button>
-      <Button fx:id="btn1" layoutX="176.0" layoutY="346.0" mnemonicParsing="false" onAction="#myBtn1" prefHeight="42.0" prefWidth="118.0" text="다음 상황">
+      <Button fx:id="btn1" alignment="CENTER" layoutX="169.0" layoutY="334.0" mnemonicParsing="false" onAction="#myBtn1" prefHeight="54.0" prefWidth="132.0" style="-fx-background-color: rgba(204,204,204,0.8);" text="다음상황" textFill="#a83737">
          <font>
-            <Font name="Arial Black" size="15.0" />
+            <Font name="Arial" size="23.0" />
          </font>
       </Button>
-      <Button fx:id="btn2" layoutX="317.0" layoutY="346.0" mnemonicParsing="false" onAction="#myBtn2" prefHeight="42.0" prefWidth="118.0" text="나가기">
+      <Button fx:id="btn2" alignment="CENTER" layoutX="310.0" layoutY="334.0" mnemonicParsing="false" onAction="#myBtn2" prefHeight="54.0" prefWidth="132.0" style="-fx-background-color: rgba(204,204,204,0.8);" text="나가기" textFill="#a83737">
          <font>
-            <Font name="Arial Black" size="15.0" />
+            <Font name="Arial" size="23.0" />
          </font>
       </Button>
    </children>

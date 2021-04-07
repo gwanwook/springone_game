@@ -6,21 +6,27 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="308.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ex01.deletemember.DeleteController">
+<AnchorPane prefHeight="308.0" prefWidth="418.0" style="-fx-background-image: url(game_resources/image/back_03.jpg); -fx-background-position: center;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ex01.deletemember.DeleteController">
    <children>
-      <Label layoutX="45.0" layoutY="30.0" prefHeight="54.0" prefWidth="84.0" text="ID">
+      <Label layoutX="73.0" layoutY="33.0" prefHeight="54.0" prefWidth="84.0" text="ID" textFill="#c61010">
          <font>
-            <Font name="ArnoPro-Regular" size="44.0" />
+            <Font name="Arial Bold" size="40.0" />
          </font>
       </Label>
-      <Label layoutX="38.0" layoutY="102.0" prefHeight="54.0" prefWidth="84.0" text="PW">
+      <Label layoutX="64.0" layoutY="104.0" prefHeight="54.0" prefWidth="103.0" text="PW" textFill="#c61010">
          <font>
-            <Font name="ArnoPro-Regular" size="44.0" />
+            <Font name="Arial Bold" size="40.0" />
          </font>
       </Label>
-      <TextField fx:id="fxId" layoutX="148.0" layoutY="40.0" prefHeight="39.0" prefWidth="225.0" />
-      <TextField fx:id="fxPw" layoutX="148.0" layoutY="111.0" prefHeight="39.0" prefWidth="225.0" />
-      <Button layoutX="276.0" layoutY="203.0" mnemonicParsing="false" onAction="#cancelProc" prefHeight="48.0" prefWidth="97.0" text="나가기" />
-      <Button layoutX="39.0" layoutY="203.0" mnemonicParsing="false" onAction="#memberoutProc" prefHeight="48.0" prefWidth="97.0" text="회원탈퇴" />
+      <TextField fx:id="fxId" layoutX="148.0" layoutY="40.0" prefHeight="39.0" prefWidth="225.0" style="-fx-background-color: rgba(204,204,204,0.3); -fx-background-radius: 8px;" />
+      <TextField fx:id="fxPw" layoutX="148.0" layoutY="111.0" prefHeight="39.0" prefWidth="225.0" style="-fx-background-color: rgba(204,204,204,0.3); -fx-background-radius: 8px;" />
+      <Button layoutX="257.0" layoutY="203.0" mnemonicParsing="false" onAction="#cancelProc" prefHeight="54.0" prefWidth="116.0" style="-fx-background-color: rgba(204,204,204,0.2);" text="나가기" textFill="#a83737">
+         <font>
+            <Font name="태 나무" size="21.0" />
+         </font></Button>
+      <Button layoutX="41.0" layoutY="203.0" mnemonicParsing="false" onAction="#memberoutProc" prefHeight="54.0" prefWidth="116.0" style="-fx-background-color: rgba(204,204,204,0.2);" text="회원탈퇴" textFill="#a83737">
+         <font>
+            <Font name="태 나무" size="21.0" />
+         </font></Button>
    </children>
 </AnchorPane>
